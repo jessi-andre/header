@@ -1,0 +1,48 @@
+:root {
+  --black: #000000;
+  --withe: #ffffff;
+  --dark-purple: #3c122c;
+  --mediaun-purple: #762ba3;
+  --light: #ae40f0;
+  --yellow: #ffc800;
+  --pink: #fc5185;
+  --light-pink: #ffeffe;
+  --green: #00b090;
+  --backgroun-gray: #eee;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--backgroun-gray);
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+}
+
+.button {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.button_primary {
+  color: var(--dark-purple);
+  background-color: var(--yellow);
+}
+
+.button_primary:hover {
+  background-color: var(--pink);
+  transition: background-color 0.3s ease-in-out;
+}
