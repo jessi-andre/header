@@ -1,9 +1,7 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const path = require('path');
+const path = require("path");
 const port = 3030;
-
-
 document.addEventListener("DOMContentLoaded", () => {
   //selección de elementos DOM
   const toggleButton = document.querySelector(".navbar__toogle-btn");
@@ -19,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   //funcion para ocultar ell menu despegable
   const hideMenuResize = () => {
-    mobileMenu.style.display = "none"
-  }
+    mobileMenu.style.display = "none";
+  };
   //evente listener o eventos de escucha
   toggleButton.addEventListener("click", toggleMenu);
   window.addEventListener("resize", hideMenuResize);
-window.addEventListener("load", hideMenuResize);
+  window.addEventListener("load", hideMenuResize);
 });
